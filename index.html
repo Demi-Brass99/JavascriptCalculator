@@ -19,17 +19,28 @@
 
         <input id = "CalculationOutput" type="text" readonly="true">
         <br>
-        <button class="button" id="Button7" type="button">7</button>
-        <button class="button" id="Button8" type="button">8</button>
-        <button class="button" id="Button9" type="button">9</button>
+        <button class="button" id="Button7" type="button" onclick="clickbutton(7)">7</button>
+        <button class="button" id="Button8" type="button" onclick="clickbutton(8)">8</button>
+        <button class="button" id="Button9" type="button" onclick="clickbutton(9)">9</button>
         <br>
-        <button class="button" id="Button4" type="button">4</button>
-        <button class="button" id="Button5" type="button">5</button>
-        <button class="button" id="Button6" type="button">6</button>
+        <button class="button" id="Button4" type="button" onclick="clickbutton(4)">4</button>
+        <button class="button" id="Button5" type="button" onclick="clickbutton(5)">5</button>
+        <button class="button" id="Button6" type="button" onclick="clickbutton(6)">6</button>
         <br>
-        <button class="button" id="Button1" type="button">1</button>
-        <button class="button" id="Button2" type="button">2</button>
-        <button class="button" id="Button3" type="button">3</button>
+        <button class="button" id="Button1" type="button" onclick="clickbutton(1)">1</button>
+        <button class="button" id="Button2" type="button" onclick="clickbutton(2)">2</button>
+        <button class="button" id="Button3" type="button" onclick="clickbutton(3)">3</button>
         <br>
+        <button class="button" id="Button0" type="button" onclick="clickbutton(0)">0</button>
+        <button class="button" id="ButtonDot" type="button" onclick="clickbutton('.')">.</button>
+        <button class="button" id="ButtonPosNeg" type="button" onclick="clickbutton(-1)">-/+</button>
+        <br>
+        <button class="button" id="ButtonDiv" type="button" onclick="clickbutton('/')">/</button>
+        <button class="button" id="ButtonMult" type="button" onclick="clickbutton('*')">x</button>
+        <button class="button" id="ButtonSub" type="button" onclick="clickbutton('-')">-</button>
+        <button class="button" id="ButtonAdd" type="button" onclick="clickbutton('+')">+</button>
+        <button class="button" id="ButtonEqual" type="button" onclick="calulateSolution()">=</button>
+        <br>
+        <button class="button" id="ButtonClear" type="button" onclick="clearCalculator()">Clear</button>
 
     </body>
