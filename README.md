@@ -1,2 +1,2 @@
-# JavascriptGamePrototype
-Making a game to learn and better understand javascript
+# Javascript Calculator
+Making a calculator application to learn and better understand javascript
