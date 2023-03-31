@@ -1,28 +1,48 @@
 
 
-var calculationString = "";
+var calculation = 0;
+var currentSymbol = "";
+
+var symbols = ['+','.','-','/','*'];
 
 window.onload = function() {
 
-    calculationString = "";
+    calculation = 0;
+    clearCalculator();
     
 }
 
 function clickbutton(value) {
 
-    calculationString += value;
-    document.getElementById("CalculationOutput").value = calculationString;
+    var isSymbol = false;
+    for (var i = 0; i < symbols.length; i++) {
+        if (value == symbols[i]) {
+            isSymbol = true;
+            currentSymbol = value;
+        }
+    }
+
+    if(!isSymbol) {
+        calculation *= 10;
+        calculation += value;
+        if(currentSymbol == '.') {
+            calculation /= 10;
+            //currentSymbol = '';
+        }
+    }
+
+    document.getElementById("CalculationOutput").value = calculation;
 
 
 }
 
 function calulateSolution() {
-    console.log(parseInt(calculationString));
+    console.log(calculation);
 }
 
 function clearCalculator() {
-    calculationString = "";
-    document.getElementById("CalculationOutput").value = calculationString;
+    calculation = 0;
+    document.getElementById("CalculationOutput").value = 0;
 }
 
 
